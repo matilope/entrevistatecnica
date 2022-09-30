@@ -6,12 +6,11 @@ dado que tiene nuevas funcionalidades.
 Las soluciones pueden ser en palabras o con comandos GIT .
 
 1.
+git log (busco el ultimo id)
 git revert **id del commit**
-git revert --continue
+git push origin DEV
 
 
 2.
-git add .
-git commit -m "deploy en producción"
 git tag -a v1.2.0
-git push origin v1.2.0
+git push origin Master
