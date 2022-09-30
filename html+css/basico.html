@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de personas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="node_modules/@gcba/obelisco/dist/obelisco.css" />
+  <link rel="stylesheet" href="estilos_propios.css" />
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Buscador de personas</h1>
+    <p>Permite buscar personas por nombre y apellido, siendo ambos campos obligatorios.</p>
+
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre </label>
+        <input class="form-control" id="nombre" type="text" name="nombre" />
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido </label>
+        <input class="form-control" id="apellido" type="text" name="apellido" />
+      </div>
+      <button class="btn btn-primary btn-lg">Buscar</button>
+    </form>
+
+    <div class="container barraProgreso">
+      <div class="progress">
+        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="80"
+          style="width:0%"></div>
+      </div>
+    </div>
+
+    <table class="table">
+      <tr class="table-bordered">
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+      </tr>
+      <tr class="table-bordered">
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr class="table-bordered">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr class="table-bordered">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr class="table-bordered">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+      <tr class="table-bordered">
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <section>
+
+      <h2>Preguntas Frecuentes :</h2>
+      <p>Encontrá las respuestas a las preguntas más frecuentes de nuestra herramienta.</p>
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-12">
+
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseOne">¿Qué es una cuenta miBA?</button>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                  <div class="card-body">Es tu cuenta única para interactuar digitalmente con diferente servicios del
+                    Gobierno de la
+                    ciudad.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseTwo">¿Quién puede utilizarla?</button>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                  <div class="card-body">Si sos mayor de 16 años y vivís en la Ciudad de Buenos Aires esta aplicación es
+                    ideal para
+                    vos. La aplicación también es útil para cualquier persona fuera de Capital Federal e incluso
+                    para Turistas.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseThree">¿Cuánto cuesta?</button>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                  <div class="card-body">¡Nada! la cuenta miBA es un servicio que el Gobierno de la Ciudad de Buenos
+                    Aires ofrece de
+                    forma gratuita.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseFour">¿Cómo obtengo una cuenta miBA?</button>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                  <div class="card-body">Desde la web podes entrar en <a
+                      href="https://miba.buenosaires.gob.ar/id/login?next=/">https://miba.buenosaires.gob.ar</a> , y
+                    registrarte.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseFive">¿Cómo me registro para crear una cuenta?</button>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li>
+                        Podés registrarte con tu usuario de Facebook o Gmail para acceder de forma simple o bien
+                        podés registrarte con tu correo electrónico y contraseña.</li>
+                      <li>
+                        Una vez creada tu cuenta, te enviaremos un correo electrónico para confirmar el registro.
+                        Revisá tu casilla de correo electrónico y confirmá tu dirección.</li>
+                      <li>
+                        Completá con tus datos personales y listo.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseSix">¿Qué puedo hacer con una cuenta miBA?</button>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                  <div class="card-body">Con tu cuenta miBA podés mediante los portales respectivos acceder a servicios
+                    de la Ciudad
+                    tales como:
+                    <ul>
+                      <li>Aplicación miBA plataforma.</li>
+                      <li>Consultar y sacar turnos de salud.</li>
+                      <li>Solicitá trámites y seguí el estado de tus solicitudes.</li>
+                      <li>Realiza denuncias.</li>
+                      <li>IVC.</li>
+                      <li>Buscar ofertas laborales.</li>
+                      <li>Pide un taxi.</li>
+                      <li>Conectate a la red Wifi de la ciudad.</li>
+                      <li>Cada dia incorporamos mas y mas servicios.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseSeven">¿Necesito otras aplicaciones para utilizar
+                  miBA?</button>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                  <div class="card-body">Si, tu cuenta es solo el portal de entrada a un mundo de servicios prestados
+                    por diferentes
+                    entes de la ciudad.</div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseEight">¿Cómo actualizo los datos de mi perfil?</button>
+                <div id="collapseEight" class="collapse" data-parent="#accordion">
+                  <div class="card-body">Una vez dentro de la aplicación, entrá al menú desplegable de la derecha,
+                    dentro de “Mi perfil”
+                    seleccioná tu nombre y se abrirá una pantalla con todos tus datos. Tené en cuenta que los
+                    datos básicos que utilizamos para preservar tu identidad (Nombre, Apellido, DNI y Email) no se
+                    pueden modificar.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <button class="card-header collapsed card-link accordion-card-icon" data-toggle="collapse"
+                  data-target="#collapseNine">¿Puedo eliminar mi cuenta?</button>
+                <div id="collapseNine" class="collapse" data-parent="#accordion">
+                  <div class="card-body"> Si, en la sección de perfil, encontrarás un botón que permite borrar tu
+                    cuenta, esto eliminará los
+                    datos ingresados con los formularios “datos básicos” y “datos opcionales” de nuestro sistema.
+                    Más adelante podrás volver a crear una nueva cuenta si la necesitas.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr />
+
+    <!-- Esto emula datos del usuario loguado-->
+    <div class="container">
+
+      <div class="datosUsuario">
+        <h2>Datos de usuario</h2>
+        <span>
+          <i style="font-size: 28px;" class='bx bx-envelope'></i>
+          leo@gmail.com
+        </span>
+      </div>
+
+      <div class="card-deck max-cards-3 row">
+
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h3 class="card-title">Turnos</h3>
+            <p class="card-text">Infracciones, verificación vehiculares, identificaciones, partidas de nacimientos,
+              etc...</p>
+          </div>
+        </div>
+
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h3 class="card-title">Consulta de infracciones</h3>
+            <p class="card-text">Accedé a la información de infracciones de tránsito.</p>
+          </div>
+        </div>
+
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h3 class="card-title">Solicitud de partidas</h3>
+            <p class="card-text">Solicitá la partida de forma online.</p>
+          </div>
+        </div>
+
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h3 class="card-title">Trámites de AGIP</h3>
+            <p class="card-text">Sacá turno para el asesoramiento de trámites.</p>
+          </div>
+        </div>
+
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h3 class="card-title">Verificación Técnica Vehicular</h3>
+            <p class="card-text">Pedí tu turno para la VTV</p>
+          </div>
+        </div>
+
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h3 class="card-title">Mapa de la Ciudad</h3>
+            <p class="card-text">Consultá cómo llegar de un punto a otro en la Ciudad.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr />
+
+    <!-- Esto emula una sección con notificaciones al usuario -->
+    <div class="container">
+
+      <h2>Información extra</h2>
+
+      <div class="notificaciones max-cards-3">
+
+        <div class="card card-simple">
+          <div class="card-body"><i class="bx bx-news card-icon"></i>
+            <h3 class="card-title">Clima</h3>
+            <p class="card-text">Parcial mente nublado, mejorando a la tarde.</p>
+          </div>
+        </div>
+
+        <div class="card card-simple">
+          <div class="card-body"><i class="bx bx-news card-icon"></i>
+            <h3 class="card-title">Corte de tránsito por obras</h3>
+            <p class="card-text">Circulá con precaución. Si vas a andar en bicicleta usá casco.</p>
+          </div>
+        </div>
+
+        <div class="card card-simple">
+          <div class="card-body"><i class="bx bx-news card-icon"></i>
+            <h3 class="card-title">Tenes una deuda</h3>
+            <p class="card-text">Paga el ABL, comunicate al ........</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</body>
+
+</html>

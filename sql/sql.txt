@@ -1,0 +1,13 @@
+SQL
+Armar las siguientes Queries
+1. Taxistas que tengan email pero no dominio (patente de vehículo)
+2. Clientes que ingresaron a la aplicación en las últimas 24hs
+3. Recuento de todos los estados de viajes.
+4. Viajes en los que el taxista con email X , llevó al pasajero con email Y.
+Dado el siguiente DER (debajo)
+
+
+1.  SELECT email FROM taxista WHERE dominio IS NULL // o WHERE dominio = ""
+2.  SELECT * FROM cliente WHERE lastLogin > DATE_SUB(NOW(), INTERVAL 24 HOUR)
+3.  SELECT estado FROM viaje
+4.  SELECT * FROM viaje INNER JOIN taxista ON taxista.id=viaje.idTaxista INNER JOIN cliente ON cliente.id=viaje.idCliente WHERE cliente.email = "matias@gmail.com" AND taxista.email = "admin@gmail.com"

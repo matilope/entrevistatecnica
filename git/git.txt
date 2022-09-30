@@ -1,0 +1,17 @@
+GIT
+Simulamos que se tienen el branch Master y el branch DEV , este último está adelantado
+dado que tiene nuevas funcionalidades.
+● Se quiere revertir la última funcionalidad pusheada
+● Se quiere hacer un deploy en producción de la versión que llamaremos v1.2.0, qué pasos seguiría?
+Las soluciones pueden ser en palabras o con comandos GIT .
+
+1.
+git revert **id del commit**
+git revert --continue
+
+
+2.
+git add .
+git commit -m "deploy en producción"
+git tag -a v1.2.0
+git push origin v1.2.0

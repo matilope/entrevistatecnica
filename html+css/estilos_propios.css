@@ -1,0 +1,102 @@
+* {
+    line-height: 32px;
+}
+
+main {
+    padding: 4rem 0;
+}
+
+h2 {
+    padding: 2rem 0;
+}
+
+
+/* Formulario */
+
+form:not(button) {
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    margin-right: 10px;
+}
+
+.btn {
+    margin-top: 13px;
+}
+
+
+/* Barra progreso */
+
+.barraProgreso {
+    margin: 40px 0;
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+
+/* Preguntas frecuentes */
+
+section h2 {
+    padding: 1rem 0;
+}
+
+section p {
+    margin-bottom: 2rem;
+}
+
+
+/* Datos de usuario */
+
+.datosUsuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datosUsuario span {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.datosUsuario+.card-deck .card {
+    background-color: #f3f6f9;
+}
+
+.datosUsuario+.card-deck .card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #007bc7
+}
+
+
+/* Informacion extra */
+
+.notificaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notificaciones div {
+    margin: 16px;
+    width: 300px;
+}
+
+
+/* Card hover */
+
+.card:hover h3 {
+    color: #007bc7;
+}
+
+
+/* Acordion */
+
+.btnColapsable {
+    display: block !important;
+}

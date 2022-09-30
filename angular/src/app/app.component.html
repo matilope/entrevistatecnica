@@ -1,0 +1,14 @@
+<main class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Buscador</h1>
+      <form>
+        <input type="search" #query placeholder="Buscar direccion.." [formControl]="search" />
+      </form>
+      <ul>
+        <li *ngFor="let direccion of direcciones">{{direccion.direccion | lowercase }}</li>
+        <li style="list-style:none;" *ngIf="!direcciones">La direccion no se ha encontrado</li>
+      </ul>
+    </div>
+  </div>
+</main>
